@@ -11,7 +11,7 @@ function App() {
     const user = fetchUser();
 
     if (!user) {
-      navigate("/login");
+      navigate("/login", { replace: true });
     }
   }, []);
 
